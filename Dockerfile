@@ -11,7 +11,6 @@ COPY . .
 #     libpq-dev
 #
 
-ENV DATABASE_URL postgres://rustflix_user:I2B2DL0q6CukjpCV9ikOFG5ouAGIziBP@dpg-cfg7n5pa6gdma8mqlkg0-a.ohio-postgres.render.com/rustflix
 RUN cargo build --release
 
 FROM debian:bullseye-slim
